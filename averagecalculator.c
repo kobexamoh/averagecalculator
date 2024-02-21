@@ -10,14 +10,15 @@ Remember to handle input validation to ensure that the user enters valid integer
 #include <stdlib.h>
 
 // function prototype 
-float calculateAverage(int numbers[], sizeof(numbers));
+float calculateAverage(int numbers[], int size);
 
 int main(void) {
 
     return 0;
 }
 
-float calculateAverage(int numbers[], sizeof(numbers)) {
+// function definition
+float calculateAverage(int numbers[], int size) {
     float average;
 
     return average;
