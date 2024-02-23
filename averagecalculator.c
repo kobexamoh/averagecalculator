@@ -11,7 +11,7 @@ Remember to handle input validation to ensure that the user enters valid integer
 
 /* M A C R O S */
 #define maxArraySize 5 // define the maximum size of the array
-#define SIZEOFARRAY sizeof(array) / sizeof(*array) // didn't want to use pointers yet, but this is for the array size
+#define SIZEOFARRAY(array) sizeof(array) / sizeof(*array) // didn't want to use pointers yet, but this is for the array size
 
 // function prototype 
 float calculateAverage(int numbers[], int size);
@@ -48,11 +48,11 @@ float calculateAverage(int numbers[], int size) {
     // average is defined as everything (in the array numbers) summed together and divided by size
 
     // h/t King C Programming book (page 162) for the idiom of the sum of elements in an array
-    for (int i = 0; i < sizeof(numbers); i++) {
+    for (int i = 0; i < SIZEOFARRAY(numbers); i++) {
         sum += numbers[i];
     }
 
-    average = sum / sizeof(numbers);
+    average = (float)sum / size;
 
     return average;
 }
