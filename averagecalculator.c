@@ -13,7 +13,7 @@ Remember to handle input validation to ensure that the user enters valid integer
 #define maxArraySize 5
 
 // function prototype 
-float calculateAverage(int numbers[], int size);
+// float calculateAverage(int numbers[], int size);
 
 int main(void) {
     int arrayForAverages[maxArraySize]; // array of empty values maximum size is 5
@@ -27,8 +27,8 @@ int main(void) {
 }
 
 // function definition
-float calculateAverage(int numbers[], int size) {
-    float average;
+// float calculateAverage(int numbers[], int size) {
+//     float average;
 
-    return average;
-}
+//     return average;
+// }
