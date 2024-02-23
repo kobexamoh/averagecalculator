@@ -17,10 +17,10 @@ Remember to handle input validation to ensure that the user enters valid integer
 
 int main(void) {
     int arrayForAverages[maxArraySize]; // array of empty values maximum size is 5
-    printf("Enter the values for the array (up to a maximum of 5 values:\n");
+    printf("Enter the values for the array (up to a maximum of 5 values):\n");
 
     // h/t King C Programming book for the idiom on reading data into arrays
-    for (int i = 0; i < maxArraySize; i ++) {
+    for (int i = 0; i < maxArraySize; i++) {
         scanf("%d", &arrayForAverages[i]);
     }
 
