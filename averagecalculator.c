@@ -35,6 +35,16 @@ int main(void) {
 // function definition
 float calculateAverage(int numbers[], int size) {
     float average;
+    int sum;
+
+    // average is defined as everything (in the array numbers) summed together and divided by size
+
+    // h/t King C Programming book (page 162) for the idiom of the sum of elements in an array
+    for (int i = 0; i < sizeof(numbers); i++) {
+        sum += numbers[i];
+    }
+
+    average = sum / sizeof(numbers);
 
     return average;
 }
