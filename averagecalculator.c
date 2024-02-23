@@ -9,11 +9,15 @@ Remember to handle input validation to ensure that the user enters valid integer
 #include <stdio.h>
 #include <stdlib.h>
 
+// define the maximum size of the array
+#define maxArraySize 5
+
 // function prototype 
 float calculateAverage(int numbers[], int size);
 
 int main(void) {
-
+    float userGeneratedValues[maxArraySize]; // array of empty values maximum size is 5
+    printf("Enter the values for the array (up to a maximum of 5 values:\n");
     return 0;
 }
 
