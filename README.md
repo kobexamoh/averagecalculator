@@ -36,3 +36,15 @@ Bless the GPTs.
 > Write a C program that defines a function called calculateAverage that takes an array of integers and its size as parameters. The function should calculate the average of all the numbers in the array and return it. Then, in the main function, declare an array of integers with a predefined maximum size (e.g., 100), prompt the user to enter the values for the array, call the calculateAverage function to find the average, and finally, print the average value.
 >
 > You can assume a maximum size for the array, such as 100, to simplify the implementation without using dynamic memory allocation.
+
+## The Suffering Begins (And It Is Necessary)
+I was able to carve out a little time to try to keep attempting this problem. I first needed to prompt the user for their values, and then I needed to define the maximum size of the array. That wasn't necessarily too bad. It got a little tricky when I tried reading the values into the array, but thanks to the textbook (King's C Programming) it became doable. And -- just my luck -- I was able to even output the values that were put into the array too! It was a win!
+
+It got quite gross once I started to mess with logic for the function definition for `averageCalculator`. Like I said previously, I didn't want to use `malloc` because I hadn't learned it in my studies yet. I literally just learned about pointers, so I was doing my best to avoid anything related to pointers in my solution. But as anyone who has tried to solve problems can attest, it's pretty much a given that there's a marked difference between the order you learn stuff and the order in which you apply stuff.
+
+Yay, me.
+
+### `sizeof` is not what you think it is
+Initially, I was trying to use `sizeof` the way that `.size()` gets used in jQuery or `.length` gets used in vanilla JS. I thought that I could easily get the size of an array that the logic in the definition for `averageCalculator` would be a piece of cake because of that. I was, however, so wrong.
+
+As it happens, `sizeof` gives the size of a pointer, NOT the size of the array as I was expecting. And from here is where all my trouble began to cascade. Oy vey.
