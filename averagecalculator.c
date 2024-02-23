@@ -23,6 +23,12 @@ int main(void) {
     for (int i = 0; i < maxArraySize; i ++) {
         scanf("%d", &arrayForAverages[i]);
     }
+
+    // display the values that the user put into the array
+    printf("Here is what you put into the array:\n");
+    for (int i = 0; i < maxArraySize; i++) {
+        printf("Array value %d:  %d\n", i+1, arrayForAverages[i]);
+    }
     return 0;
 }
 
