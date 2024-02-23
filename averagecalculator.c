@@ -33,8 +33,8 @@ int main(void) {
 }
 
 // function definition
-// float calculateAverage(int numbers[], int size) {
-//     float average;
+float calculateAverage(int numbers[], int size) {
+    float average;
 
-//     return average;
-// }
+    return average;
+}
