@@ -9,8 +9,9 @@ Remember to handle input validation to ensure that the user enters valid integer
 #include <stdio.h>
 #include <stdlib.h>
 
-// define the maximum size of the array
-#define maxArraySize 5
+/* M A C R O S */
+#define maxArraySize 5 // define the maximum size of the array
+#define SIZEOFARRAY sizeof(array) / sizeof(*array) // didn't want to use pointers yet, but this is for the array size
 
 // function prototype 
 float calculateAverage(int numbers[], int size);
