@@ -17,6 +17,7 @@ float calculateAverage(int numbers[], int size);
 
 int main(void) {
     int arrayForAverages[maxArraySize]; // array of empty values maximum size is 5
+    float result;
     printf("Enter the values for the array (up to a maximum of 5 values):\n");
 
     // h/t King C Programming book for the idiom on reading data into arrays
@@ -29,6 +30,12 @@ int main(void) {
     for (int i = 0; i < maxArraySize; i++) {
         printf("Array value %d:  %d\n", i+1, arrayForAverages[i]);
     }
+
+    // pass array into function in order to get the average
+    result = calculateAverage(arrayForAverages, maxArraySize);
+
+    printf("\nThe average of the numbers you entered is %f\n", result);
+
     return 0;
 }
 
